@@ -1,0 +1,815 @@
+/* =================================================
+   APTIORA CONTACT PAGE ONLY
+   ================================================= */
+
+
+/* ---------- CONTACT HERO ---------- */
+
+.aptiora-contact-hero {
+    position: relative;
+    min-height: 720px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 7% 80px;
+
+    background: #f7f1e7;
+}
+
+
+/* ---------- BACKGROUND IMAGE ---------- */
+
+.contact-background {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        url("contact-bg.png");
+
+    background-size: cover;
+    background-position: center;
+
+    z-index: 0;
+}
+
+
+/*
+   Slight transparent layer so the form
+   and text remain readable.
+*/
+
+.contact-background::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(247, 241, 231, 0.18);
+}
+
+
+/* ---------- CONTENT ---------- */
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1350px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(350px, 0.9fr)
+        minmax(500px, 1.1fr);
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* ---------- LEFT TEXT ---------- */
+
+.contact-intro {
+    max-width: 600px;
+}
+
+
+.contact-eyebrow {
+    display: inline-block;
+
+    color: #c9a24a;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+.contact-intro h1 {
+    color: #142a43;
+
+    font-size: clamp(48px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    margin: 0 0 25px;
+
+    font-weight: 700;
+}
+
+
+.contact-intro p {
+    color: #40566e;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin: 0 0 18px;
+
+    max-width: 580px;
+}
+
+
+/* ---------- FORM CARD ---------- */
+
+.aptiora-booking-card {
+    background: rgba(255, 255, 255, 0.94);
+
+    backdrop-filter: blur(8px);
+
+    border-radius: 24px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 20px 50px rgba(20, 42, 67, 0.16);
+
+    border: 1px solid rgba(20, 42, 67, 0.08);
+}
+
+
+/* ---------- FORM HEADING ---------- */
+
+.booking-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 8px;
+}
+
+
+.booking-heading i {
+    color: #c9a24a;
+
+    font-size: 25px;
+}
+
+
+.booking-heading h2 {
+    color: #142a43;
+
+    font-size: 30px;
+
+    margin: 0;
+
+    font-weight: 700;
+}
+
+
+.booking-subtitle {
+    color: #607287;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0 0 25px;
+}
+
+
+/* ---------- FORM GRID ---------- */
+
+.contact-form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+/* ---------- FORM FIELD ---------- */
+
+.contact-field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.contact-field label {
+    color: #142a43;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d6dce2;
+
+    background: #fff;
+
+    color: #142a43;
+
+    border-radius: 10px;
+
+    padding: 13px 14px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.25s;
+}
+
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+
+    border-color: #c9a24a;
+
+    box-shadow:
+        0 0 0 3px rgba(201, 162, 74, 0.12);
+}
+
+
+.contact-field textarea {
+
+    resize: vertical;
+
+    min-height: 100px;
+}
+
+
+/* ---------- MESSAGE ---------- */
+
+.contact-message {
+
+    margin-top: 18px;
+}
+
+
+/* ---------- SUBMIT BUTTON ---------- */
+
+.contact-submit-btn {
+
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 15px 22px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #142a43;
+
+    color: #fff;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.contact-submit-btn:hover {
+
+    background: #c9a24a;
+
+    transform: translateY(-2px);
+}
+
+
+/* =================================================
+   FOOTER
+   ================================================= */
+
+.aptiora-contact-footer {
+
+    background: #142a43;
+
+    color: white;
+
+    padding: 60px 7% 20px;
+}
+
+
+.contact-footer-container {
+
+    max-width: 1350px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr 1fr 1fr 1.2fr;
+
+    gap: 60px;
+}
+
+
+/* ---------- FOOTER BRAND ---------- */
+
+.contact-footer-brand {
+
+    max-width: 330px;
+}
+
+
+.footer-logo-text {
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    color: white;
+
+    line-height: 1;
+}
+
+
+.footer-tagline {
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #c9a24a;
+
+    margin-top: 8px;
+}
+
+
+.contact-footer-brand p {
+
+    color: rgba(255,255,255,0.75);
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+    margin-top: 22px;
+}
+
+
+/* ---------- FOOTER COLUMNS ---------- */
+
+.contact-footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.contact-footer-column h3 {
+
+    font-size: 16px;
+
+    margin: 0 0 8px;
+
+    color: white;
+}
+
+
+.contact-footer-column a {
+
+    color: rgba(255,255,255,0.72);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.25s;
+}
+
+
+.contact-footer-column a:hover {
+
+    color: #c9a24a;
+}
+
+
+.contact-footer-column p {
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 14px;
+
+    margin: 0;
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+.contact-footer-column p i {
+
+    color: #c9a24a;
+
+    width: 16px;
+}
+
+
+/* ---------- SOCIAL ---------- */
+
+.footer-social {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 12px;
+}
+
+
+.footer-social a {
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255,255,255,0.12);
+
+    color: white !important;
+
+    transition: 0.3s;
+}
+
+
+.footer-social a:hover {
+
+    background: #c9a24a;
+
+    color: #142a43 !important;
+}
+
+
+/* ---------- FOOTER BOTTOM ---------- */
+
+.contact-footer-bottom {
+
+    max-width: 1350px;
+
+    margin: 45px auto 0;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.contact-footer-bottom p {
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.65);
+
+    font-size: 13px;
+}
+
+
+.contact-footer-bottom div {
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+.contact-footer-bottom a {
+
+    color: rgba(255,255,255,0.65);
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+.contact-footer-bottom a:hover {
+
+    color: #c9a24a;
+}
+
+
+/* =================================================
+   RESPONSIVE
+   ================================================= */
+
+@media (max-width: 1000px) {
+
+    .aptiora-contact-hero {
+
+        padding: 60px 5%;
+
+    }
+
+    .contact-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+    .contact-intro {
+
+        max-width: 700px;
+
+    }
+
+    .contact-footer-container {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .aptiora-contact-hero {
+
+        padding: 45px 20px;
+
+    }
+
+    .contact-form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .aptiora-booking-card {
+
+        padding: 24px;
+
+        border-radius: 18px;
+
+    }
+
+    .contact-intro h1 {
+
+        font-size: 45px;
+
+    }
+
+    .contact-footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+    .contact-footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+}
+
+
+
+
+
+
+
+.destination-dropdown {
+    position: absolute;
+    top: 38px;
+    right: -120px;
+
+    width: 600px;
+
+    background: rgba(248, 246, 240, 0.98);
+
+    border: 1px solid rgba(20, 42, 67, 0.12);
+
+    border-radius: 18px;
+
+    box-shadow: 0 18px 45px rgba(20, 42, 67, 0.15);
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+
+    z-index: 9999;
+}
+
+
+/* Show dropdown when mouse goes over Destinations */
+
+.destination-menu:hover .destination-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* ================================
+   DROPDOWN TITLE
+================================ */
+
+.dropdown-title {
+    padding: 17px 20px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #142a43;
+
+    border-bottom: 1px solid rgba(20, 42, 67, 0.10);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+.dropdown-title span {
+    font-size: 16px;
+}
+
+
+/* ================================
+   COUNTRY GRID
+================================ */
+
+.country-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ================================
+   COUNTRY ITEM
+================================ */
+
+.country-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 18px;
+
+    text-decoration: none;
+
+    color: var(--ink);
+
+    font-size: 14px;
+
+    border-right: 1px solid rgba(20, 42, 67, 0.08);
+
+    border-bottom: 1px solid rgba(20, 42, 67, 0.08);
+
+    transition: background 0.2s ease;
+}
+
+.country-item:hover {
+    background: rgba(201, 155, 55, 0.10);
+}
+
+
+/* Country flags */
+
+.country-item img {
+    width: 28px;
+
+    height: 20px;
+
+    object-fit: cover;
+
+    border-radius: 2px;
+
+    flex-shrink: 0;
+}
+
+
+/* Country name */
+
+.country-item span {
+    white-space: nowrap;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .destination-dropdown {
+        width: 90vw;
+        right: -100px;
+    }
+
+    .country-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .destination-dropdown {
+        width: 85vw;
+        right: -50px;
+    }
+
+    .country-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.destination-menu {
+    margin-right: 7px !important;
+}
+
+.destination-link {
+    margin-left: 20px !important;
+}
+
+/* Career Assessment / Career Counselling link */
+.destination-menu + a {
+    margin-left: 10px !important;
+}

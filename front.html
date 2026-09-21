@@ -146,7 +146,7 @@
             </div>
         </div>
 
-<a href="career-counselling.html">Career Counselling</a><a href="#contact" class="btn">Book a Session</a></div>
+<a href="career-counselling.html">Career Counselling</a><a href="contactus.html">Contact Us</a><a href="#contact" class="btn">Book a Session</a></div>
 </nav>
 
 <header class="hero">
@@ -176,13 +176,7 @@
 </section>
 
 
-<!-- ========================= -->
-<!-- STATISTICS SECTION START -->
-<!-- ========================= -->
 
-
-
-<!-- Statistics End -->
 
 
 
@@ -230,7 +224,7 @@
 
         </div>
 
-        <a href="#contact" class="btn">
+        <a href="assessment.html" class="btn">
             Start Free Assessment →
         </a>
 
@@ -698,87 +692,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <script>
 
-const toggle = document.getElementById("theme-toggle");
-const icon = toggle.querySelector("i");
-
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-function updateIcon(){
-
-if(document.body.classList.contains("dark-theme")){
-
-icon.className="fa-solid fa-sun";
-
-}else{
-
-icon.className="fa-solid fa-moon";
-
-}
-
-}
-
-function enableDark(){
-
-document.body.classList.add("dark-theme");
-
-updateIcon();
-
-}
-
-function enableLight(){
-
-document.body.classList.remove("dark-theme");
-
-updateIcon();
-
-}
-
-const savedTheme = localStorage.getItem("theme");
-
-if(savedTheme){
-
-savedTheme==="dark" ? enableDark() : enableLight();
-
-}else{
-
-if(prefersDark.matches){
-
-enableDark();
-
-}
-
-}
-
-toggle.addEventListener("click",()=>{
-
-if(document.body.classList.contains("dark-theme")){
-
-enableLight();
-
-localStorage.setItem("theme","light");
-
-}else{
-
-enableDark();
-
-localStorage.setItem("theme","dark");
-
-}
-
-});
-
-prefersDark.addEventListener("change",(e)=>{
-
-if(!localStorage.getItem("theme")){
-
-e.matches ? enableDark() : enableLight();
-
-}
-
-});
-
-</script>
-<script>
 
 const counters = document.querySelectorAll(".counter");
 
